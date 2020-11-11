@@ -182,8 +182,7 @@ function drawBarsAirlinesChart(airlines, scales, config) {
     .on("mouseleave", function(d) {
             d3.select(this)
             this.style.fill= "#2a5599";
-            d => drawRoutes(d.AirlineID)
-         
+            d.AirlineID == null;         
             return drawRoutes(null);
         //TODO: Add another listener, this time for mouseleave
         //TODO: In this listener, call drawRoutes(null), this will cause the function to remove all lines in the chart since there is no airline withe AirlineID == null.
